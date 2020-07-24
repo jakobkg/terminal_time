@@ -31,6 +31,14 @@ Shrink your terminal and pin it with your window manager of choice to always hav
 The argument -s/--seconds can be passed to show HH:MM:SS instead of the default HH:MM.
 Using both -l and -s at the same time is not recommended as there is a noticeable flicker or blink whenever the clock updates, and when -ls is passed this happens once per second.
 
+### Example output
+    jakob in ~: clock
+        ██      ██          ██████  ██████
+        ██      ██    ██    ██  ██  ██  ██
+        ██      ██          ██  ██  ██████
+        ██      ██    ██    ██  ██      ██
+        ██      ██          ██████  ██████
+
 ## Customizability
 Make a copy of the *font* file, and edit away!
 Open the new *font* file in your text editor of choice, and you can change the symbols that are used to display the time.
