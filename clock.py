@@ -55,7 +55,6 @@ args = parser.parse_args()
 
 fontFilename = args.filename if args.filename else 'font'
 fontPath = os.path.dirname(__file__) + '/' + fontFilename
-print(fontPath)
 
 printbuf = ''
 
