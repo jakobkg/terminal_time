@@ -53,13 +53,15 @@ def clock(loop: bool, showSeconds: bool) -> None:
 
 args = parser.parse_args()
 
-fontFile = args.filename if args.filename else 'font'
+fontFilename = args.filename if args.filename else 'font'
+fontPath = os.path.dirname(__file__) + '/' + fontFilename
+print(fontPath)
 
 printbuf = ''
 
 prevTime = datetime.today() - timedelta(minutes=1)
 
-with open(fontFile, 'r') as f:
+with open(fontPath, 'r') as f:
     fontbuf = re.split('\n', f.read())
 
 fontSize = len(fontbuf) // 11
